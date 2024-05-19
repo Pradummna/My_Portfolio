@@ -48,14 +48,14 @@ body {
 
 .logo,
 .links {
-    margin: 12px 0px;
+    margin: 14px 0px;
 }
 
 .tab-links {
     color: black;
     text-decoration: none;
     padding: 8px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -95,7 +95,7 @@ body {
 }
 
 .profile_pic {
-    margin: 15px 0px;
+    margin: 16px 0px;
     width: 72%;
     border-radius: 50%;
     border: 10px solid rgb(246, 220, 152);
@@ -103,13 +103,13 @@ body {
 }
 
 .txt {
-    margin-top: 20px;
+    margin-top: 23px;
 }
 
 .txt h1,
 .txt p {
     padding: 5px 0px;
-    margin-left: 1.1rem;
+    margin-left: 1.2rem;
 }
 
 .txt h1 {
