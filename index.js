@@ -1,28 +1,28 @@
-const topBtn = document.getElementById('top_btn');
+ // Mobile Menu Toggle
+        const navLinks = document.querySelectorAll('.nav-link');
+        const menuToggle = document.getElementById('navbarNav');
+        const bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: false });
 
-topBtn.addEventListener('click', () => {
-    window.scroll({ top: 0, behavior: 'smooth' });
-});
+        navLinks.forEach((l) => {
+            l.addEventListener('click', () => {
+                if (menuToggle.classList.contains('show')) {
+                    bsCollapse.toggle()
+                }
+            })
+        })
 
-window.onscroll = function() {
-    const topBtnSec = document.querySelector('.top_btn_sec');
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        topBtnSec.style.display = 'block';
-    } else {
-        topBtnSec.style.display = 'none';
-    }
-}
+        // --- Back to Top Logic ---
+        const backToTopBtn = document.getElementById("backToTop");
 
-// error in last project
-const clgProject = document.getElementById('clg');
+        window.onscroll = function () {
+            // Show button if scrolled down 300px
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                backToTopBtn.classList.add("show");
+            } else {
+                backToTopBtn.classList.remove("show");
+            }
+        };
 
-clgProject.addEventListener("click", ()=> {
-    alert('Failed to load the page');
-});
-
-// Web Link
-const surojitPage = document.getElementById('web_link');
-
-surojitPage.addEventListener('click', ()=> {
-    window.location.href = 'https://surojitacademy.com/index.php';
-});
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
