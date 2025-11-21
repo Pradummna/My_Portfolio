@@ -4,281 +4,296 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="res.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>My CS Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;500;600&family=Fira+Code&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../index.css">
+    <style>
+      
+    </style>
 </head>
 
-<body>
-    <!-- Navbar -->
-    <div class="navbar">
-        <div class="logo">
-            <h3>PK</h3>
-        </div>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="100">
 
-        <div class="links">
-            <a href="#" class="tab-links">Home</a>
-            <a href="#about" class="tab-links">About</a>
-            <a href="#skills" class="tab-links">Skills</a>
-            <a href="#projects" class="tab-links">Projects</a>
-            <a href="#resume" class="tab-links">Resume</a>
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar-example">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-laptop-code"></i> <span>MyPortfolio</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa-solid fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home"><i class="fas fa-home me-1"></i>
+                            Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about"><i class="fas fa-user me-1"></i> About</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#skills"><i class="fas fa-tools me-1"></i> Skills</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#projects"><i
+                                class="fas fa-project-diagram me-1"></i> Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" target="_blank"><i
+                                class="fas fa-file-alt me-1"></i> Resume</a></li>
+                </ul>
+            </div>
         </div>
+    </nav>
 
-        <div class="tab">
-            <i class="fa fa-bars" id="open"></i>
-            <i class="fa fa-close" id="close"></i>
-        </div>
-    </div>
-
-    <!-- Main Sections -->
     <section id="home">
-        <div class="mybg">
-            <div class="home_sec">
-                <div class="intro_txt">
-                    <div class="txt">
-                        <h1>I am Pradumna Kalita</h1>
-                        <p class="web">I'm a <span class="ani">Web Developer</span></p>
-                        <p id="click_about"><a href="#about" id="abt2">About Me&nbsp;<i class="fa fa-arrow-circle-down"></i></a></p>
-                    </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="lead text-white mb-2">Hello, I'm</p>
+                    <h1 class="hero-name">Pradumna Kalita</h1>
+                    <p class="hero-subtitle">&lt; Building Logic / Creating Solutions &gt;</p>
 
-                    <div class="intro_links">
-                        <a href="https://www.facebook.com/pradumna.kalita.7"><i class="fa fa-facebook"></i></a>
-                        <a href="mailto:pradumnakalita781@gmail.com"><i class="fa fa-envelope"></i></a>
-                        <a href="https://www.linkedin.com/in/pradumna-kalita-3a573b282/"><i
-                                class="fa fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/pradumna__9/"><i class="fa fa-instagram"></i></a>
-                        <a href="https://github.com/Pradummna"><i class="fa fa-github"></i></a>
-                    </div>
-                </div>
-
-                <div class="profile">
-                    <center><img src="img/profile.jpg" alt="profile" class="profile_pic"></center>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About section -->
-    <section id="about" data-aos="zoom-in">
-        <div class="head">
-            <h1>About Me</h1>
-        </div>
-
-        <div class="cen_abt">
-            <div class="about-section">
-                <div class="profile-pic">
-                    <img src="img/pk.png" alt="Profile Picture">
-                </div>
-
-                <div class="about-text">
-                    <h2>My Journey</h2>
-                    <p>
-                       I embarked on my journey as a web designer in 2023 at a dynamic startup. I hold a Bachelor's degree in Computer Applications (BCA) from Guwahati University. After working for one year as an assistant computer science teacher at a private school near my hometown, I decided to pursue higher studies. Currently, I am enrolled in a Master of Computer Applications (MCA) program at Cotton University.                    </p>
-                    <p>
-                        My skills include HTML, CSS, JavaScript, PHP, Figma, Canva, and Bootstrap. I am passionate about learning programming and new technologies, and I pride myself on being a quick learner with strong problem-solving abilities in my field.
+                    <p class="text-enhanced mb-5">
+                        Welcome to my digital space. I turn ideas into working projects with the help of today's
+                        technologies.
                     </p>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
 
-    <!-- Skills -->
-    <section id="skills" data-aos="fade-up">
-        <div class="head">
-            <h1>Skills</h1>
-        </div>
-
-        <div class="skills_sec">
-            <div class="cen">
-                <div class="skills">
-                    <div class="skills_img">
-                        <img src="img/html.png" alt="">
-                    </div>
-                    <div class="skills_name">
-                        <p>HTML</p>
-                    </div>
-                </div>
-                <div class="skills">
-                    <div class="skills_img">
-                        <img src="img/css.png" alt="">
-                    </div>
-                    <div class="skills_name">
-                        <p>CSS</p>
-                    </div>
-                </div>
-                <div class="skills">
-                    <div class="skills_img">
-                        <img src="img/js.png" alt="">
-                    </div>
-                    <div class="skills_name">
-                        <p>JavaScript</p>
-                    </div>
-                </div>
-                <div class="skills">
-                    <div class="skills_img">
-                        <img src="img/figma.png" alt="">
-                    </div>
-                    <div class="skills_name">
-                        <p>Figma</p>
-                    </div>
-                </div>
-                <div class="skills">
-                    <div class="skills_img">
-                        <img src="img/canva.png" alt="">
-                    </div>
-                    <div class="skills_name">
-                        <p>Canva</p>
-                    </div>
-                </div>
-                <div class="skills">
-                    <div class="skills_img">
-                        <img src="img/bootstrap.png" alt="">
-                    </div>
-                    <div class="skills_name">
-                        <p>Bootstrap</p>
-                    </div>
-                </div>
-                <div class="skills">
-                    <div class="skills_img">
-                        <img src="img/php-logo.png" alt="">
-                    </div>
-                    <div class="skills_name">
-                        <p>PHP</p>
-                    </div>
-                </div>
-                <div class="skills">
-                    <div class="skills_img">
-                        <img src="img/github.png" alt="">
-                    </div>
-                    <div class="skills_name">
-                        <p>GitHub</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#projects" class="btn btn-custom">View Work</a>
+                        <a href="#contact" class="btn btn-outline-custom">Contact Me</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects sections -->
-    <section id="projects" data-aos="zoom-in">
-        <div class="p_head">
-            <h1>Projects Made</h1>
-        </div>
-
-        <div class="projects_sec">
-            <div class="cen2">
-                <div class="show_projects">
-                    <a href="https://surojitacademy.com/index.php" class="project_link">Surojit Academy</a>
-                </div>
-
-                <div class="show_projects">
-                    <a href="https://pradummna.github.io/portfolio/" class="project_link">Portfolio Clone</a>
-                </div>
-
-                <div class="show_projects">
-                    <a href="https://pradummna.github.io/nft/" class="project_link">NFT Clone</a>
-                </div>
-
-                <div class="show_projects">
-                    <a href="#" class="project_link" id="clg">College Clone</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Resume sections -->
-    <section id="resume" data-aos="fade-up">
-        <div class="head">
-            <h1>Resume</h1>
-        </div>
-
-        <div class="resume_sec">
-            <div class="resume">
-                <div class="left-side">
-                    <div class="name-bio">
-                        <h1 class="resume_head">Pradumna Kalita</h1>
-                        <p class="resume_p">I’m a passionate web developer with expertise in HTML, CSS, JavaScript, PHP, and frameworks like Bootstrap, 
-                            along with design tools such as Canva and Figma. I specialize in building responsive, user-friendly websites with a strong focus on UI/UX principles—ensuring intuitive interfaces and smooth user experiences. With experience across various industries, I’m dedicated to delivering tailored web solutions that not only meet clients’ needs but also elevate their online presence through thoughtful design and functionality.
+    <section id="about" style="background: var(--bg-card);">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="p-4"
+                        style="background: var(--bg-dark); border-radius: 15px; border-left: 5px solid var(--accent); box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                        <p class="lead mb-0" style="line-height: 1.8; color: #e2e8f0;">
+                            I completed my BCA from Guwahati University and worked for a year as an assistant computer
+                            science teacher at a private school near my hometown. I am now pursuing an MCA at Cotton
+                            University. I like learning programming and keeping up with new technologies. I like
+                            learning programming and keeping up with new technologies.
                         </p>
                     </div>
-                    <div class="education">
-                        <h2 class="resume_head">Education</h2>
-                        <p class="resume_p"><strong>Sualkuchi Budhram Madhab Satradhikar College</strong><br>Bachelor of Computer
-                            Application (BCA)<br>2020 - 2023</p>
-                        <p class="resume_p"><strong>Cotton University</strong><br>Masters of Computer
-                            Application (MCA)<br>2024 - Present</p>
-                    </div>
                 </div>
-                <div class="right-side">
-                    <div class="experience">
-                        <h2 class="resume_head">Professional Experience</h2><br>
-                        <p class="resume_p"><strong>Techxy</strong><br>Web Designer<br>2023 - 2024<br>At my previous startup, I worked as a web designer on the live project <span id="web_link">Surojit Academy</span>, coding design elements with HTML, CSS, and JavaScript. I also developed and coded five web templates, ensuring they were visually appealing and user-friendly.</p><br>
-                        <p class="resume_p"><strong>Gyandeep English Academy</strong><br>Assistant Teacher<br>Sept, 2023 -
-                            Sept, 2024<br>As an assistant teacher of computer science, I supported classroom activities, helped students understand complex concepts, and assisted in developing lesson plans and materials.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="resume_file">
-                <a href="Pradumna(resume).pdf" id="resume_pdf">Resume</a>
             </div>
         </div>
     </section>
 
-    <!-- footer section -->
-    <section id="footer" data-aos="zoom-in">
-        <div class="footer_sec">
-            <div class="page_links">
-                <h2 class="foot_head">Page Links</h2>
-                <a href="#" class="f_tab_a">Home</a>
-                <a href="#about" class="f_tab_a">About</a>
-                <a href="#skills" class="f_tab_a">Skills</a>
-                <a href="#projects" class="f_tab_a">Projects</a>
-                <a href="#resume" class="f_tab_a">Resume</a>
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+
+            <h4 class="text-center mb-4 text-light"><i class="fas fa-code me-2"
+                    style="color: var(--accent)"></i>Languages</h4>
+            <div class="row g-4 justify-content-center mb-5">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="skill-card">
+                        <i class="devicon-c-plain skill-icon c-lang"></i>
+                        <h5>C</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="skill-card">
+                        <i class="devicon-python-plain skill-icon python"></i>
+                        <h5>Python</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="skill-card">
+                        <i class="devicon-javascript-plain skill-icon js"></i>
+                        <h5>JavaScript</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="skill-card">
+                        <i class="devicon-php-plain skill-icon php"></i>
+                        <h5>PHP</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="skill-card">
+                        <i class="devicon-mysql-plain skill-icon mysql"></i>
+                        <h5>MySQL</h5>
+                    </div>
+                </div>
             </div>
 
-            <div class="contact_sec">
-                <div class="contact_info">
-                    <h2 class="foot_head">Contact Info</h2>
-                    <ul>
-                        <li>+918822168920</li>
-                        <li>pradumnakalita781@gmail.com</li>
-                        <li>Sualkuchi, Assam-781103</li>
-                    </ul>
+            <h4 class="text-center mb-4 text-light"><i class="fas fa-toolbox me-2"
+                    style="color: var(--accent)"></i>Tools & Technologies</h4>
+            <div class="row g-4 justify-content-center">
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="skill-card">
+                        <i class="devicon-bootstrap-plain skill-icon bootstrap"></i>
+                        <h5>Bootstrap</h5>
+                    </div>
                 </div>
-
-                <div class="social intro_links">
-                    <a href="https://www.facebook.com/pradumna.kalita.7"><i class="fa fa-facebook"></i></a>
-                    <a href="mailto:pradumnakalita781@gmail.com"><i class="fa fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/in/pradumna-kalita-3a573b282/"><i class="fa fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/pradumna__9/"><i class="fa fa-instagram"></i></a>
-                    <a href="https://github.com/Pradummna"><i class="fa fa-github"></i></a>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="skill-card">
+                        <i class="devicon-figma-plain skill-icon figma"></i>
+                        <h5>Figma</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="skill-card">
+                        <i class="devicon-git-plain skill-icon git"></i>
+                        <h5>Git</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="skill-card">
+                        <i class="devicon-github-original skill-icon text-white"></i>
+                        <h5>GitHub</h5>
+                    </div>
                 </div>
             </div>
-        </div>
-        <hr>
-        <div class="f_sec">
-            <p>Designed by <span class="f_n">Pradumna Kalita</span></p>
         </div>
     </section>
 
-     <!-- Top button -->
-     <div class="top_btn_sec">
-        <button id="top_btn"><i class="fa fa-angle-up"></i></button>
-    </div>
+    <section id="projects" style="background: var(--bg-card);">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="row g-4">
 
-    <script src="nav.js"></script>
-    <script src="index.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init(
-            {
-                duration: 1600,
-            }
-        );
-    </script>
+                <div class="col-md-6 col-lg-6">
+                    <div class="project-card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h3 class="project-title">BookStore</h3>
+                                <i class="fas fa-shopping-cart fa-2x" style="color: var(--accent);"></i>
+                            </div>
+                            <div class="mb-3">
+                                <span class="badge-tech">PHP</span>
+                                <span class="badge-tech">SQL</span>
+                                <span class="badge-tech">E-Commerce</span>
+                            </div>
+                            <div class="project-desc">
+                                <ul>
+                                    <li>Built an online bookstore with user login, cart, and order system.</li>
+                                    <li>Designed database for inventory, orders, and admin management.</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6">
+                    <div class="project-card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h3 class="project-title">Surojit Academy</h3>
+                                <i class="fas fa-masks-theater fa-2x" style="color: var(--accent);"></i>
+                            </div>
+                            <div class="mb-3">
+                                <span class="badge-tech">PHP</span>
+                                <span class="badge-tech">JS</span>
+                                <span class="badge-tech">SEO</span>
+                            </div>
+                            <div class="project-desc">
+                                <ul>
+                                    <li>Built a website for a drama/art academy with course & student info.</li>
+                                    <li>Implemented SEO practices to improve visibility and search ranking.</li>
+                                </ul>
+                            </div>
+                            <a href="https://surojitacademy.com" target="_blank" class="project-link">Visit Site <i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6">
+                    <div class="project-card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h3 class="project-title">Duplicate Question Detection</h3>
+                                <i class="fas fa-brain fa-2x" style="color: var(--accent);"></i>
+                            </div>
+                            <div class="mb-3">
+                                <span class="badge-tech">Python</span>
+                                <span class="badge-tech">NLP</span>
+                                <span class="badge-tech">ML</span>
+                            </div>
+                            <div class="project-desc">
+                                <ul>
+                                    <li>Detected similar/duplicate questions using text preprocessing and ML models.
+                                    </li>
+                                    <li>Used feature extraction (TF-IDF/CV) for classification of pairs.</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="project-link">View Code <i class="fas fa-code-branch"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6">
+                    <div class="project-card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h3 class="project-title">Multi-Modal Medical Imaging</h3>
+                                <i class="fas fa-x-ray fa-2x" style="color: var(--accent);"></i>
+                            </div>
+                            <div class="mb-3">
+                                <span class="badge-tech">Python</span>
+                                <span class="badge-tech">Deep Learning</span>
+                            </div>
+                            <div class="project-desc">
+                                <ul>
+                                    <li>Built a model to process multiple image types (mammogram, ultrasound, etc).</li>
+                                    <li>Achieved improved accuracy by combining multi-modal features.</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="project-link">View Research <i class="fas fa-microscope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container text-center">
+            <h2 class="section-title">Get In Touch</h2>
+
+            <p class="text-enhanced mb-5">
+                Have an idea or want to discuss something? You can reach out anytime.
+            </p>
+
+            <div class="d-flex justify-content-center flex-wrap gap-3">
+                <a href="mailto:pradumnakalita781@gmail.com" class="contact-btn" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/pradumna-kalita-3a573b282/" target="_blank" class="contact-btn" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/Pradummna" target="_blank" class="contact-btn" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <button id="backToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <footer>
+        <div class="container">
+            <p class="mb-0">&copy; 2025. Pradumna Kalita. Designed & Built with <i class="fas fa-heart"
+                    style="color: #d946ef;"></i> and Bootstrap.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=""></script>
 </body>
 
 </html>
